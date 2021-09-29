@@ -1,406 +1,506 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body,
-        html {
-            height: 100%;
-            margin: 0;
-            font: 400 15px/1.8 "Lato", sans-serif;
-            color: #777;
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+.drop{
+    display: none;
+    position: fixed;
+    top: 93px;
+    left: 149vh;
+    border-radius: 8mm;
+    background-color: #FFBC06;
+    padding: 18px;
+    z-index: 1;
+}
+  
+  a:hover + .drop{
+            display: block;
+            color: rgb(221, 221, 221);
+            font-size: 17px;
         }
 
 
+/* IMAGES*/
+.logo1 img { 
+  position: relative;
+  left:525px;
+  top: -90px;
+  width:300px;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.952);
+  Height:300px;}
+  
 
-        /* IMAGES*/
-        .logo1 img {
-            position: relative;
-            left: 525px;
-            top: -50px;
-            width: 550px;
-            Height: 500px;
+.logo1 img:hover {
+  box-shadow: 0 0 20px 20px rgba(224, 168, 12, 0.945);
+}
+
+/*logos*/
+
+
+
+
+
+.icona img{
+  position: relative;
+  width:  150px;
+  height: 150px;
+  top:-50px
+}
+    
+
+
+    
+     
+    
+   
+
+
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("img1/1.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("img1/2.png");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("img1/3.png");
+  min-height: 400px;
+}
+
+.captiona {
+ 
+  position: relative;
+  left: 80px;
+  top: 75px;
+  width: 1450px;
+  text-align: center;
+  color: #000;
+}
+
+.captiona span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 65px;
+  letter-spacing: 10px;
+}
+
+.captionb {
+ 
+ position: relative;
+ left: 80px;
+ top: 75px;
+ width: 1450px;
+ text-align: center;
+ color: #000;
+}
+
+.captionb span.border {
+ background-color: #111;
+ color: #fff;
+ padding: 18px;
+ font-size: 65px;
+ letter-spacing: 10px;
+}
+
+
+
+.captionc {
+ 
+ position: relative;
+ left: 80px;
+ top: 75px;
+ width: 1450px;
+ text-align: center;
+ color: #000;
+}
+
+.captionc span.border {
+ background-color: #111;
+ color: #fff;
+ padding: 18px;
+ font-size: 65px;
+ letter-spacing: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+.caption {
+  top:20px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 40px;
+  letter-spacing: 10px;
+}
+
+
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+/*AIM ICONS*/
+
+.icona{
+  float: left;
+  width: 25%;
+  padding: 3px;
+  bottom: 20px;
+}
+
+.iconbg::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.o{
+    letter-spacing: 0px;
+  text-transform: uppercase;
+  font:12px "Lato", sans-serif;
+  color: #ddd;
+}
+
+
+/*Avatar*/
+.AV1 img{
+  
+  vertical-align: middle;
+  position: relative;
+  left:-70px;
+  top: -17px;
+  width:200px;
+  Height:204px;
+}
+
+.AV2 img{
+  
+  vertical-align: middle;
+  position: relative;
+  right:-1215px;
+  top: 7px;
+  width:200px;
+  Height:204px;
+}
+
+
+
+
+/*AVARTARS*/
+.AV1{
+  display: flex;
+  
+}
+
+
+
+
+/*MEET OUR TEAM*/
+.srv{
+    letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #FFFCFC;
+  text-align: center;
+
+}
+
+.arj{
+    letter-spacing: 3px;
+  text-transform: uppercase;
+  font: 15px "Lato", sans-serif;
+  color: #FFFCFC;
+  text-align: center;
+  padding-block: -100px;
+}
+
+/*Quotes */
+.q{
+    font: 25px "Lato", sans-serif;
+  color: #FFFCFC;
+  text-align: center;
+  padding-block: -100px;
+}
+
+.b{
+    font: 30px "Lato", sans-serif;
+  color: #FFFCFC;
+  text-align: center;
+  padding-block: -100px;
+}
+.nav-item{
+            padding: 6px 18px;
         }
+        .nav-link:hover {
+      transform: scale(1.05);
+      box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.808);
+      background-color: rgba(37, 34, 34, 0.233);
+    }
+    .nav-link{
+      border-radius: 8mm;
+    }
+    body{
+  font-family: 'Open Sans', sans-serif;   
+}
+.obj{
+    letter-spacing: 1px;
+    font: 25px "Lato", sans-serif;
+  color: #FFFCFC;
+  text-align: center;
+  padding-block: -100px;
+}
+@media only screen and (max-device-width: 1024px) {
+    .logo1 img { 
+  left:135px;
+  top: -90px;
+  width:550px;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.952);
+  Height:500px;}
 
-
-        .logo1 img:hover {
-            box-shadow: 0 0 10px 10px rgba(168, 62, 255, 0.952);
-        }
-
-        .icona img {
-            position: relative;
-            width: 100px;
-            height: 100px;
-            top: -50px
-        }
-
-        .bgimg-1,
-        .bgimg-2,
-        .bgimg-3 {
-            position: relative;
-            opacity: 0.65;
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-
-        }
-
-        .bgimg-1 {
-            background-image: url("images/1.jpg");
-            min-height: 100%;
-        }
-
-        .bgimg-2 {
-            background-image: url("images/2.png");
-            min-height: 400px;
-        }
-
-        .bgimg-3 {
-            background-image: url("images/3.png");
-            min-height: 400px;
-        }
-
-        .captiona {
-
-            position: relative;
-            left: 80px;
-            top: 75px;
-            width: 1450px;
-            text-align: center;
-            color: #000;
-        }
-
-        .captiona span.border {
-            background-color: #111;
-            color: #fff;
-            padding: 18px;
-            font-size: 65px;
-            letter-spacing: 10px;
-        }
-
-        .captionb {
-
-            position: relative;
-            left: 80px;
-            top: 75px;
-            width: 1450px;
-            text-align: center;
-            color: #000;
-        }
-
-        .captionb span.border {
-            background-color: #111;
-            color: #fff;
-            padding: 18px;
-            font-size: 65px;
-            letter-spacing: 10px;
-        }
-
-        .captionc {
-
-            position: relative;
-            left: 80px;
-            top: 75px;
-            width: 1450px;
-            text-align: center;
-            color: #000;
-        }
-
-        .captionc span.border {
-            background-color: #111;
-            color: #fff;
-            padding: 18px;
-            font-size: 65px;
-            letter-spacing: 10px;
-        }
-
-        .caption {
-            top: 20px;
-            position: absolute;
-            left: 0;
-            top: 50%;
-            width: 100%;
-            text-align: center;
-            color: #000;
-        }
-
-        .caption span.border {
-            background-color: #111;
-            color: #fff;
-            padding: 18px;
-            font-size: 40px;
-            letter-spacing: 10px;
-        }
-
-
-
-        h3 {
-            letter-spacing: 5px;
-            text-transform: uppercase;
-            font: 20px "Lato", sans-serif;
-            color: #111;
-        }
-
-
-        * {
-            box-sizing: border-box;
-        }
-
-        .icona {
-            float: left;
-            width: 25%;
-            padding: 3px;
-            bottom: 20px;
-        }
-
-        .iconbg::after {
-            content: "";
-            clear: both;
-            display: table;
-        }
-
-
-
-        .AV1 img {
-
-            /* vertical-align: middle; */
-            position: relative;
-            left: -70px;
-            top: -17px;
-            width: 200px;
-            Height: 204px;
-        }
-
-        .AV2 img {
-
-            vertical-align: middle;
-            position: relative;
-            right: -1215px;
-            top: 7px;
-            width: 200px;
-            Height: 204px;
-        }
-
-        .AV1 {
-            display: flex;
-            /* position: relative; */
-
-        }
-
-        /* Turn off parallax scrolling for tablets and phones */
-        @media only screen and (max-device-width: 1024px) {
-
-            .bgimg-1,
-            .bgimg-2,
-            .bgimg-3 {
-                background-attachment: scroll;
-            }
-        }
-    </style>
+   .captiona {
+ position: relative;
+ right: -260;
+ top: 75px;
+ width: 700px;
+ text-align: center;
+ color: #000;}
+   .captionb {
+ 
+ position: relative;
+ left: 80px;
+ top: 75px;
+ width: 600px;
+ text-align: center;
+ color: #000;
+              }
+   .captionc {
+ 
+ position: relative;
+ left: 80px;
+ top: 75px;
+ width: 600px;
+ text-align: center;
+ color: #000;
+}              
+}
+</style>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+  </style>
+  <link rel="icon" href="images/logo.png" type="image/x-icon">
 </head>
-
 <body>
+    <!-- THIS IS FOR NAVIGATION BAR -->
+  <header>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="smile again.html">
+          <img src="images/logo with words.png" alt="" width="180" height="100">
+        </a>
 
-    <div class="bgimg-1">
-        <div class="captiona">
-            <span class="border">ABOUT US</span>
-        </div>
-    </div>
+        <nav class="navbar navbar-expand-lg navbar-warning bg-warning" style="border-radius: 8mm;">
+          <div class="container-fluid">
 
-    <div class="logo1">
-        <img src="images/logo.png" width="50" height="50">
-    </div>
-
-
-    <div style="color: #777;background-color:white;text-align:center;padding:50px 80px; text-align: justify;">
-        <h3 style="text-align:center;">Parallax Demo</h3>
-        <p>Parallax scrolling is a web site trend where the background content is moved at a different speed than the
-            foreground content while scrolling. Nascetur per nec posuere turpis, lectus nec libero turpis nunc at, sed
-            posuere mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit
-            dignissim. Viverra interdum mi magna mi, morbi sociis. Condimentum dui ipsum consequat morbi, curabitur
-            aliquam pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl
-            dapibus vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque risus odio.
-            Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem
-            mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante
-            augue etiam maecenas, porta porttitor placerat leo.</p>
-    </div>
-
-
-    <!--AIM PART-->
-
-    <div class="bgimg-2">
-        <div class="captionb">
-            <span class="border">AIM</span>
-        </div>
-    </div>
-
-    <div style="position:relative;">
-        <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-            <p>Scroll up and down to really get the feeling of how Parallax Scrolling works. Parallax scrolling is a web
-                site trend where the background content is moved at a different speed than the foreground content while
-                scrolling. Nascetur per nec posuere turpis, lectus nec libero turpis nunc at, sed posuere mollis
-                ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit dignissim.
-                Viverra interdum mi magna mi, morbi sociis. Condimentum dui ipsum consequat morbi, curabitur aliquam
-                pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl dapibus
-                vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque risus odio. Accumsan
-                fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem
-                mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante
-                augue etiam maecenas, porta porttitor placerat leo.</p>
-        </div>
-    </div>
-
-    <div class="iconbg">
-        <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;">
-
-
-            <div class="icona" ;>
-                <img src="ICONS/1a.png">
-                <P>Scroll up and down to really get the feeling of how Parallax Scrolling works. </P>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link " aria-current="page" href="smile again.html" style="padding: 8px 34px; ">HOME</a>
+                <a class="nav-link" href="about us.html" style="padding: 8px 34px;">ABOUT US</a>
+                <a class="nav-link" href="smile again.html" style="padding: 8px 34px;">CONTACT US</a><div class="drop">MAIL: smile-again@gmail.com <br><br>PH. NO.: +91-6201848517</div>
+                <a class="nav-link" href="faq.html" style="padding: 8px 34px;">FAQ</a>
+              </div>
             </div>
+          </div>
+        </nav>
+      </div>
+    </nav>
+  </header>
 
-            <div class="icona" ;>
-                <img src="ICONS/1a.png">
-                <P>Scroll up and down to really get the feeling of how Parallax Scrolling works. </P>
-            </div>
+  <!-- NAVBAR ENDS HERE -->
+    <script>!function(e,t,a){var c=e.head||e.getElementsByTagName("head")[0],n=e.createElement("script");n.async=!0,n.defer=!0, n.type="text/javascript",n.src=t+"/static/js/chat_widget.js?config="+JSON.stringify(a),c.appendChild(n)}(document,"https://app.engati.com",{bot_key:"6d8a45afe6c345d7",welcome_msg:true,branding_key:"default",server:"https://app.engati.com",e:"p" });</script>
 
-            <div class="icona" ;>
-                <img src="ICONS/1a.png">
-                <P>Scroll up and down to really get the feeling of how Parallax Scrolling works. </P>
-            </div>
+<div class="bgimg-1">
+  <div class="captiona">
+  <span class="border">ABOUT US</span>
+  </div>
+</div>
 
-            <div class="icona" ;>
-                <img src="ICONS/1a.png">
-                <P>Scroll up and down to really get the feeling of how Parallax Scrolling works. </P>
-            </div>
-
-            <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;">
-                <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;"></div>
-
-
-            </div>
+<div class="logo1">
+  <a href="smile again.html"><img src="img1/logo.png" ></a>
+</div>  
 
 
+<div style="color: #777;background-color:white;text-align:center;padding:0px 80px;text-align: justify;">
+  <h3 style="text-align:center; font-family:sans-serif; font-size:30px;">SMILE AGAIN</h3>
+  <p style="font-family:sans-serif; font-size:25px;">Smile again is the lifestyle characterized by safe and effective planner. The name smile again drives from reclaiming your mental peace and eleminating  various elements which can led to mental illness. 
+    The Smile Again logo in itself describe about the importance mental wellness in our daily life and promotes the well being and welfare of mental health of the individuals. 
+    It enriched yellow color is perceived as being a high energy color creating a sense of excitement or energy and also to evoke a sense of happiness.</p>
+</div>
 
 
+<!--AIM PART-->
 
+<div class="bgimg-2">
+  <div class="captionb">
+  <span class="border" >OBJECTIVE</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+    <hr><h3 class=q > "You, yourself, as much as anybody in the entire universe,<br> deserve your love and affection.”<br> <h3 class=b>— Buddha</h3></h3><hr>
+  <p class="obj">The absence of mental illness does not equal mental health. Just as the lack of physical illness does not equal physical wellness.
+       To reap the benefits of mental health, special attention to the growth of practices that improve mental health is necessary. There’s, unfortunately, no magic wand, magic pill, or special potion that will move someone along the continuum of mental health. <br>
+    
+     <br><br>We at SMILE AGAIN Raise awareness about the mental health continuum, reduce stigma associated with mental illness, promote help seeking behaviors and  emotional well-being practices, and prevent suicide through individual education and outreach events. Some of our key features are as follows.</p>
+  </div>
+</div>
+
+<div class="iconbg">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:100px 80px;">
+  
+    
+      <div class="icona";>
+        <img src="ICONS/5a.png" >
+        <P class=o style="font-size: 20px;" >Contents for mental well-being </P>
         </div>
 
-    </div>
+        <div class="icona";>
+          <img src="ICONS/2a.png" >
+          <P class=o style="font-size: 20px;">One to One therapy <br>sessions and support </P>
+          </div>
 
-
-    <!--AIM PART  END-->
-
-
-    <!--MEET OUR TEAM-->>
-    <div class="bgimg-3">
-        <div class="captionc">
-            <span class="border">MEET OUR TEAM</span>
-        </div>
-    </div>
-
-    <div style="color:#ddd;background-color:#282E34;padding:50px 80px;">
-        <div style="color:#ddd;background-color:#2073c5;text-align:left;padding:50px 80px;text-align: justify;">
-
-            <div class="AV1">
-                <div class="avtar1" ;>
-                    <img src="ICONS/2.png">
-
-                </div>
-
-                <div class="avtartxt1" ;>
-                    <h3> Parallax Demo</h3>
-                    <p> scrolling is a web site trend where the background content is moved at a different speed than
-                        the foreground content while scrolling. Nascetur per nec posuere turpis, lectus nec
-                        libero turpis nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit pellentesque
-                        a, magna turpis est sapien duis blandit dignissim. Viverra interdum mi magna mi, morbi sociis.
-                        Condimentum dui ipsum consequat morbi, curabitur aliquam pede, nullam vitae eu placerat eget et
-                        vehicula. Varius quisque non molestie dolor, nunc nisl dapibus vestibulum at, sodales tincidunt
-                        mauris ullamcorper, dapibus pulvinar, in in neque risus odio. Accumsan fringilla vulputate at
-                        quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem mattis, ratione
-                        interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante augue
-                        etiam maecenas, porta porttitor placerat leo.</p>
-                </div>
-
+          <div class="icona";>
+            <img src="ICONS/4a.png" >
+            <P class=o style="font-size: 20px;">Smile Again <br>instant chat bot </P>
             </div>
 
-        </div>
-        <hr>
-        <div style="color:#ddd;background-color:#282E34;padding:50px 80px;">
-            <div style="color:#ddd;background-color:#282E34;text-align: justify;">
+            <div class="icona";>
+              <img src="ICONS/3a.png" >
+              <P class=o style="font-size: 20px;">24 x 7 SUPPORT </P>
+              </div>
 
-                <div class="AV1">
-                    
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;">
+   <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;"></div>
 
-                    <div class="avtartxt1" ;>
-                        <h3> Parallax Demo</h3>
-                        <p> scrolling is a web site trend where the background content is moved at a different speed
-                            than
-                            the foreground content while scrolling. Nascetur per nec posuere turpis, lectus nec
-                            libero turpis nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit
-                            pellentesque
-                            a, magna turpis est sapien duis blandit dignissim. Viverra interdum mi magna mi, morbi
-                            sociis.
-                            Condimentum dui ipsum consequat morbi, curabitur aliquam pede, nullam vitae eu placerat eget
-                            et
-                            vehicula. Varius quisque non molestie dolor, nunc nisl dapibus vestibulum at, sodales
-                            tincidunt
-                            mauris ullamcorper, dapibus pulvinar, in in neque risus odio. Accumsan fringilla vulputate
-                            at
-                            quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem mattis, ratione
-                            interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante
-                            augue
-                            etiam maecenas, porta porttitor placerat leo.</p>
-                    </div>
-                    <div class="avatar">
-                        <img src="ICONS/2.png">
-                        </div>
-                </div>
-                
-            </div>
-            <!-- <div style="color:#ddd;background-color:#fcae07d5; text-align:left; padding:50px; text-align:justify">
-            <div class="AV2">
-                <div class="avtar1" ;>
-                    <img src="ICONS/2.png" style="margin-left: 140vh;">
+          
+      </div>
+            
 
 
+      
 
-                    <div class="avtartxt2" ;>
-                        <h3 style="padding-left: 50px;"> Parallax Demo</h3>
-                        <p > scrolling is a web site trend where the background content is moved at
-                            a different speed than the foreground content while scrolling. Nascetur per nec posuere
-                            turpis, lectus nec
-                            libero turpis nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit
-                            pellentesque a, magna turpis est sapien duis blandit dignissim. Viverra interdum mi magna
-                            mi, morbi sociis. Condimentum dui ipsum consequat morbi, curabitur aliquam pede, nullam
-                            vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl dapibus
-                            vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque risus
-                            odio. Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate,
-                            non id vehicula lorem mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel,
-                            non sit platea sit, maecenas ante augue etiam maecenas, porta porttitor placerat leo.</p>
-                    </div>
-                </div>
-            </div>
-            <hr>
-        </div> -->
+  </div>
+  
+</div>  
 
 
-        </div>
+<!--AIM PART  END-->
+
+
+<!--MEET OUT TEAM-->>
+<div class="bgimg-3">
+  <div class="captionc">
+    <span class="border" >MEET OUR TEAM</span>
+  </div>
+</div>
+
+<div style="color:#ddd;background-color: #282E34;padding:63px 80px;">
+
+   <div style="color:#ddd;background-color:#282E34;padding:1px 80px;">
+     <h3 class="srv"> SOURAV CHANDRA</h3>
+     <h4 class="arj">(Group Lead and coder)</h4>
+     <p > </p></div>
+  <hr>
+
+   <div style="color:#ddd;background-color:#282E34;padding:1px 80px;">
+      <h3 class="srv">  AAHELI SADHUKHAN</h3>
+      <h4 class="arj">(Group Coordinator and designer) </h4>
+       <p > </p> </div>
+   <hr>
+
+    <div style="color:#ddd;background-color:#282E34;padding:1px 80px;">
+       <h3 class="srv"> PRITIKA SHAILYA</h3>
+       <h4 class="arj">(Group Coordinator and designer)</h4>
+       <p > </p> </div>
+    <hr>
+
+    <div style="color:#ddd;background-color:#282E34;padding:1px 80px;">
+       <h3 class="srv"> ARNAJIT CHAKRABORTY</h3>
+       <h4 class="arj">(Group Coordinator and Coder)</h4>
+       <p > </p> </div>
+    <hr>
+
     </div>
-    </div>
-    <!--MEET OUT TEAM END-->>
-    <div class="bgimg-1">
+
+</div>
+
+
+<!--MEET OUT TEAM END-->>
+<div class="bgimg-1">
 
 
 
 
 
-        <div class="caption">
-            <span class="border">COOL!</span>
-        </div>
-    </div>
+  <div class="caption">
+  <span class="border">SMILE AGAIN !</span>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+crossorigin="anonymous"></script>
 
 </body>
-
 </html>
