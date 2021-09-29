@@ -1,0 +1,35 @@
+#heading {
+	/* text-align: center; */
+	padding-left: 35px;
+	font: 30px;
+	
+}
+
+.accordion {
+	background-color: #FFF9B2;
+	color: #444;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	text-align: left;
+	border: 1px;
+	opacity: 0.6;
+	transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+	background-color: #FFEF78;
+	transform: scale(.95);
+}
+
+.panel {
+	padding: 0 18px;
+	background-color: white;
+	display: none;
+	overflow: hidden;
+	opacity: 0.8;
+}
+body{
+	font-family: 'Open Sans', sans-serif;   
+  }

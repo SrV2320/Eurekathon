@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="styleyoga.css" />
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <title>Yoga</title>
+    <style>
+        .nav-link:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.808);
+    background-color: rgba(37, 34, 34, 0.233);
+  }
+  .nav-link{
+    
+    border-radius: 8mm;
+  }
+  body{
+    font-family: 'Open Sans', sans-serif;
+  }
+  .drop{
+    display: none;
+    position: fixed;
+    top: 93px;
+    left: 149vh;
+    border-radius: 8mm;
+    background-color: #FFBC06;
+    padding: 18px;
+    z-index: 1;
+}
+  
+  a:hover + .drop{
+            display: block;
+            color: rgb(221, 221, 221);
+            font-size: 17px;
+        }
+  
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+   </style>
+  </head>
+  <body>
+     <!-- THIS IS FOR NAVIGATION BAR -->
+  <header>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="smile again.html">
+          <img src="images/logo with words.png" alt="" width="180" height="100">
+        </a>
+
+        <nav class="navbar navbar-expand-lg navbar-warning bg-warning" style="border-radius: 8mm;">
+          <div class="container-fluid">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link " aria-current="page" href="smile again.html" style="padding: 8px 34px; ">HOME</a>
+                <a class="nav-link" href="#" style="padding: 8px 34px;">ABOUT US</a>
+                <a class="nav-link" href="smile again.html" style="padding: 8px 34px;">CONTACT US</a><div class="drop">MAIL: smile-again@gmail.com <br><br>PH. NO.: +91-6201848517</div>
+                <a class="nav-link" href="faq.html" style="padding: 8px 34px;">FAQ</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </nav>
+  </header>
+
+  <!-- NAVBAR ENDS HERE -->
+    <h1>Yoga</h1>
+    <h1>Practice Yoga to Calm your mind</h1>
+  <div class="container">
+    <div class="style" id=display> 00 : 00 : 00
+ </div>
+ <div>
+  <button onclick="startstop()" id="startstop">Start</button>
+  <button onclick="reset()" id="reset">Reset</button>
+ </div>
+ </div>
+  <div id="player">
+    <div class="music-container" id="music-container">
+      <div class="music-info">
+        <h4 id="title"></h4>
+        <div class="progress-container" id="progress-container">
+          <div class="progress" id="progress"></div>
+        </div>
+      </div>
+
+      <audio src="images\music\relaxing.mp3" id="audio"></audio>
+
+      <div class="img-container">
+        <img src="images/deepblue.png" id="cover" />
+      </div>
+      <div class="navigation">
+        <button id="prev" class="action-btn">
+          <i class="fas fa-backward"></i>
+        </button>
+        <button id="play" class="action-btn action-btn-big">
+          <i class="fas fa-play"></i>
+        </button>
+        <button id="next" class="action-btn">
+          <i class="fas fa-forward"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+    <div id="Types">
+      <h1 id="yo">Yoga Poses for stress Relief and Anxiety</h1>
+      <p id="yo" style="font-size: 30px; color: black; text-decoration: underline;"><b>Play some music in the above player and set the timer to do the following poses.</b></p>
+      <ul id="yo">
+  <li>Anjali Mudra  for 10-12 minutes for three times a day</li>
+  <li>Anulom Vilom for 5-10 minutes</li>
+  <li>Padahastasana for 20-30 seconds</li>
+  <li>Viprati Karni for 10 minutes</li>
+  <li>Balasana for 30 seconds</li>
+
+</ul>
+      
+    </div>
+    <!-- CHAT BOT -->
+<script>!function(e,t,a){var c=e.head||e.getElementsByTagName("head")[0],n=e.createElement("script");n.async=!0,n.defer=!0, n.type="text/javascript",n.src=t+"/static/js/chat_widget.js?config="+JSON.stringify(a),c.appendChild(n)}(document,"https://app.engati.com",{bot_key:"6d8a45afe6c345d7",welcome_msg:true,branding_key:"default",server:"https://app.engati.com",e:"p" });</script>
+<!-- CHAT BOT ENDS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <script src="scriptyoga.js"></script>
+  </body>
+</html>

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            font: 400 15px/1.8 "Lato", sans-serif;
+            color: #777;
+        }
+
+
+
+        /* IMAGES*/
+        .logo1 img {
+            position: relative;
+            left: 525px;
+            top: -50px;
+            width: 550px;
+            Height: 500px;
+        }
+
+
+        .logo1 img:hover {
+            box-shadow: 0 0 10px 10px rgba(168, 62, 255, 0.952);
+        }
+
+        .icona img {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            top: -50px
+        }
+
+        .bgimg-1,
+        .bgimg-2,
+        .bgimg-3 {
+            position: relative;
+            opacity: 0.65;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        .bgimg-1 {
+            background-image: url("images/1.jpg");
+            min-height: 100%;
+        }
+
+        .bgimg-2 {
+            background-image: url("images/2.png");
+            min-height: 400px;
+        }
+
+        .bgimg-3 {
+            background-image: url("images/3.png");
+            min-height: 400px;
+        }
+
+        .captiona {
+
+            position: relative;
+            left: 80px;
+            top: 75px;
+            width: 1450px;
+            text-align: center;
+            color: #000;
+        }
+
+        .captiona span.border {
+            background-color: #111;
+            color: #fff;
+            padding: 18px;
+            font-size: 65px;
+            letter-spacing: 10px;
+        }
+
+        .captionb {
+
+            position: relative;
+            left: 80px;
+            top: 75px;
+            width: 1450px;
+            text-align: center;
+            color: #000;
+        }
+
+        .captionb span.border {
+            background-color: #111;
+            color: #fff;
+            padding: 18px;
+            font-size: 65px;
+            letter-spacing: 10px;
+        }
+
+        .captionc {
+
+            position: relative;
+            left: 80px;
+            top: 75px;
+            width: 1450px;
+            text-align: center;
+            color: #000;
+        }
+
+        .captionc span.border {
+            background-color: #111;
+            color: #fff;
+            padding: 18px;
+            font-size: 65px;
+            letter-spacing: 10px;
+        }
+
+        .caption {
+            top: 20px;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            color: #000;
+        }
+
+        .caption span.border {
+            background-color: #111;
+            color: #fff;
+            padding: 18px;
+            font-size: 40px;
+            letter-spacing: 10px;
+        }
+
+
+
+        h3 {
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            font: 20px "Lato", sans-serif;
+            color: #111;
+        }
+
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .icona {
+            float: left;
+            width: 25%;
+            padding: 3px;
+            bottom: 20px;
+        }
+
+        .iconbg::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+
+
+        .AV1 img {
+
+            /* vertical-align: middle; */
+            position: relative;
+            left: -70px;
+            top: -17px;
+            width: 200px;
+            Height: 204px;
+        }
+
+        .AV2 img {
+
+            vertical-align: middle;
+            position: relative;
+            right: -1215px;
+            top: 7px;
+            width: 200px;
+            Height: 204px;
+        }
+
+        .AV1 {
+            display: flex;
+            /* position: relative; */
+
+        }
+
+        /* Turn off parallax scrolling for tablets and phones */
+        @media only screen and (max-device-width: 1024px) {
+
+            .bgimg-1,
+            .bgimg-2,
+            .bgimg-3 {
+                background-attachment: scroll;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="bgimg-1">
+        <div class="captiona">
+            <span class="border">ABOUT US</span>
+        </div>
+    </div>
+
+    <div class="logo1">
+        <img src="images/logo.png" width="50" height="50">
+    </div>
+
+
+    <div style="color: #777;background-color:white;text-align:center;padding:50px 80px; text-align: justify;">
+        <h3 style="text-align:center;">Parallax Demo</h3>
+        <p>Parallax scrolling is a web site trend where the background content is moved at a different speed than the
+            foreground content while scrolling. Nascetur per nec posuere turpis, lectus nec libero turpis nunc at, sed
+            posuere mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit
+            dignissim. Viverra interdum mi magna mi, morbi sociis. Condimentum dui ipsum consequat morbi, curabitur
+            aliquam pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl
+            dapibus vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque risus odio.
+            Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem
+            mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante
+            augue etiam maecenas, porta porttitor placerat leo.</p>
+    </div>
+
+
+    <!--AIM PART-->
+
+    <div class="bgimg-2">
+        <div class="captionb">
+            <span class="border">AIM</span>
+        </div>
+    </div>
+
+    <div style="position:relative;">
+        <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+            <p>Scroll up and down to really get the feeling of how Parallax Scrolling works. Parallax scrolling is a web
+                site trend where the background content is moved at a different speed than the foreground content while
+                scrolling. Nascetur per nec posuere turpis, lectus nec libero turpis nunc at, sed posuere mollis
+                ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit dignissim.
+                Viverra interdum mi magna mi, morbi sociis. Condimentum dui ipsum consequat morbi, curabitur aliquam
+                pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl dapibus
+                vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque risus odio. Accumsan
+                fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem
+                mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante
+                augue etiam maecenas, porta porttitor placerat leo.</p>
+        </div>
+    </div>
+
+    <div class="iconbg">
+        <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;">
+
+
+            <div class="icona" ;>
+                <img src="ICONS/1a.png">
+                <P>Scroll up and down to really get the feeling of how Parallax Scrolling works. </P>
+            </div>
+
+            <div class="icona" ;>
+                <img src="ICONS/1a.png">
+                <P>Scroll up and down to really get the feeling of how Parallax Scrolling works. </P>
+            </div>
+
+            <div class="icona" ;>
+                <img src="ICONS/1a.png">
+                <P>Scroll up and down to really get the feeling of how Parallax Scrolling works. </P>
+            </div>
+
+            <div class="icona" ;>
+                <img src="ICONS/1a.png">
+                <P>Scroll up and down to really get the feeling of how Parallax Scrolling works. </P>
+            </div>
+
+            <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;">
+                <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;"></div>
+
+
+            </div>
+
+
+
+
+
+        </div>
+
+    </div>
+
+
+    <!--AIM PART  END-->
+
+
+    <!--MEET OUR TEAM-->>
+    <div class="bgimg-3">
+        <div class="captionc">
+            <span class="border">MEET OUR TEAM</span>
+        </div>
+    </div>
+
+    <div style="color:#ddd;background-color:#282E34;padding:50px 80px;">
+        <div style="color:#ddd;background-color:#2073c5;text-align:left;padding:50px 80px;text-align: justify;">
+
+            <div class="AV1">
+                <div class="avtar1" ;>
+                    <img src="ICONS/2.png">
+
+                </div>
+
+                <div class="avtartxt1" ;>
+                    <h3> Parallax Demo</h3>
+                    <p> scrolling is a web site trend where the background content is moved at a different speed than
+                        the foreground content while scrolling. Nascetur per nec posuere turpis, lectus nec
+                        libero turpis nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit pellentesque
+                        a, magna turpis est sapien duis blandit dignissim. Viverra interdum mi magna mi, morbi sociis.
+                        Condimentum dui ipsum consequat morbi, curabitur aliquam pede, nullam vitae eu placerat eget et
+                        vehicula. Varius quisque non molestie dolor, nunc nisl dapibus vestibulum at, sodales tincidunt
+                        mauris ullamcorper, dapibus pulvinar, in in neque risus odio. Accumsan fringilla vulputate at
+                        quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem mattis, ratione
+                        interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante augue
+                        etiam maecenas, porta porttitor placerat leo.</p>
+                </div>
+
+            </div>
+
+        </div>
+        <hr>
+        <div style="color:#ddd;background-color:#282E34;padding:50px 80px;">
+            <div style="color:#ddd;background-color:#282E34;text-align: justify;">
+
+                <div class="AV1">
+                    
+
+                    <div class="avtartxt1" ;>
+                        <h3> Parallax Demo</h3>
+                        <p> scrolling is a web site trend where the background content is moved at a different speed
+                            than
+                            the foreground content while scrolling. Nascetur per nec posuere turpis, lectus nec
+                            libero turpis nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit
+                            pellentesque
+                            a, magna turpis est sapien duis blandit dignissim. Viverra interdum mi magna mi, morbi
+                            sociis.
+                            Condimentum dui ipsum consequat morbi, curabitur aliquam pede, nullam vitae eu placerat eget
+                            et
+                            vehicula. Varius quisque non molestie dolor, nunc nisl dapibus vestibulum at, sodales
+                            tincidunt
+                            mauris ullamcorper, dapibus pulvinar, in in neque risus odio. Accumsan fringilla vulputate
+                            at
+                            quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem mattis, ratione
+                            interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante
+                            augue
+                            etiam maecenas, porta porttitor placerat leo.</p>
+                    </div>
+                    <div class="avatar">
+                        <img src="ICONS/2.png">
+                        </div>
+                </div>
+                
+            </div>
+            <!-- <div style="color:#ddd;background-color:#fcae07d5; text-align:left; padding:50px; text-align:justify">
+            <div class="AV2">
+                <div class="avtar1" ;>
+                    <img src="ICONS/2.png" style="margin-left: 140vh;">
+
+
+
+                    <div class="avtartxt2" ;>
+                        <h3 style="padding-left: 50px;"> Parallax Demo</h3>
+                        <p > scrolling is a web site trend where the background content is moved at
+                            a different speed than the foreground content while scrolling. Nascetur per nec posuere
+                            turpis, lectus nec
+                            libero turpis nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit
+                            pellentesque a, magna turpis est sapien duis blandit dignissim. Viverra interdum mi magna
+                            mi, morbi sociis. Condimentum dui ipsum consequat morbi, curabitur aliquam pede, nullam
+                            vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl dapibus
+                            vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque risus
+                            odio. Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate,
+                            non id vehicula lorem mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel,
+                            non sit platea sit, maecenas ante augue etiam maecenas, porta porttitor placerat leo.</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div> -->
+
+
+        </div>
+    </div>
+    </div>
+    <!--MEET OUT TEAM END-->>
+    <div class="bgimg-1">
+
+
+
+
+
+        <div class="caption">
+            <span class="border">COOL!</span>
+        </div>
+    </div>
+
+</body>
+
+</html>
