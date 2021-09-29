@@ -160,12 +160,12 @@ body{
 }
 #yo{
   background:transparent;
-  color: rgb(250, 250, 250);
+  color: rgb(0, 0, 0);
   border-radius: 1.2rem;
   font-size: 1.5rem;
 }
 li{
     text-align: left;
     padding: 10px ;
-    color: #c09110e8;
+    color: #523d05e8;
 }
