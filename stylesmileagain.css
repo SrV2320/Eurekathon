@@ -22,7 +22,10 @@
     text-align: center;
   }
 
-
+.active{
+  background-color: #FFEF78;
+	transform: scale(.95);
+}
   .nav-link:hover {
     transform: scale(1.05);
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.808);
