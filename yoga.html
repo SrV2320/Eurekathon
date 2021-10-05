@@ -42,6 +42,13 @@
             color: rgb(221, 221, 221);
             font-size: 17px;
         }
+        .header{
+          position: fixed;
+          width: 100%;
+          z-index: 20;
+        }
+       
+        
   
     </style>
     <style>
@@ -50,39 +57,41 @@
   </head>
   <body>
      <!-- THIS IS FOR NAVIGATION BAR -->
-  <header>
-    <nav class="navbar navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img src="images/logo with words.webp" alt="" width="180" height="100">
-        </a>
-
-        <nav class="navbar navbar-expand-lg navbar-warning bg-warning" style="border-radius: 8mm;">
-          <div class="container-fluid">
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-link " aria-current="page" href="index.html" style="padding: 8px 34px; ">HOME</a>
-                <a class="nav-link" href="about us.html" style="padding: 8px 34px;">ABOUT US</a>
-                <a class="nav-link" href="index.html" style="padding: 8px 34px;">CONTACT US</a><div class="drop">MAIL: smile-again@gmail.com <br><br>PH. NO.: +91-6201848517</div>
-                <a class="nav-link" href="faq.html" style="padding: 8px 34px;">FAQ</a>
+     <div class="header">
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+  
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo with words.webp" alt="" width="180" height="100">
+          </a>
+          <nav class="navbar navbar-expand-lg navbar-warning bg-warning" style="border-radius: 8mm;">
+            <div class="container-fluid">
+  
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="index.html" style="padding: 8px 34px; color: black;">HOME</a>
+                  <a class="nav-link" href="about us.html" style="padding: 8px 34px;color: black;">ABOUT US</a>
+                  <a class="nav-link" href="#contact" style="padding: 8px 34px;color: black;">CONTACT US</a>
+                  <div class="drop" style="color: black;">MAIL: smile-again@gmail.com <br><br>PH. NO.: +91-6201848517</div>
+                  <a class="nav-link" href="faq.html" style="padding: 8px 34px; color: black;">FAQ</a>
+                </div>
               </div>
             </div>
-          </div>
-        </nav>
-      </div>
-    </nav>
-  </header>
+          </nav>
+  
+        </div>
+      </nav>
+    </div>
 
   <!-- NAVBAR ENDS HERE -->
     <h1 style="font-size: 50px;">Yoga</h1>
-    <h1 style="font-size: 30px;">Practice Yoga to Calm your mind (Scroll down for Yoga schedule)</h1>
+    <h1 style="font-size: 30px; font-family: Arial, Helvetica, sans-serif;font-weight: 600;">Practice Yoga to Calm your mind (Scroll down for Yoga schedule)</h1>
   <div class="container">
-    <div class="style" id=display> 00 : 00 : 00
+    <div class="style" id=display style="font-family: open sans-serif;"> 00 : 00 : 00
  </div>
  <div>
   <button onclick="startstop()" id="startstop">Start</button>
@@ -117,8 +126,8 @@
     </div>
   </div>
     <div id="Types">
-      <h1 id="yo" style="font-size: 40px; color: black;"><u>Yoga Poses for stress Relief and Anxiety</u></h1>
-      <p id="yo" style="font-size: 30px; color: black;"><b>Play some music in the above player and set the timer to do the following poses.</b></p>
+      <h1 id="yo" style="font-size: 40px; color: #b85233ce;"><u><b>YOGA POSES FOR STRESS RELIEF</b></u></h1>
+      <p id="yo" style="font-size: 30px; color: #b85233ce; font-family: Arial, Helvetica, sans-serif;"><b>Play some music in the above player and set the timer to do the following poses.</b></p>
       <ul id="yo">
   <li>Anjali Mudra  for 10-12 minutes for three times a day</li>
   <li>Anulom Vilom for 5-10 minutes</li>

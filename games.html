@@ -14,7 +14,7 @@
   background-image: linear-gradient(rgb(75, 73, 73) 40%,#134B98,rgb(41, 41, 41));
 }
 .card{
-  margin: 12px;
+  margin: 30px;
   padding: auto;
   text-align: center;
   justify-content: center;
@@ -24,8 +24,8 @@
 .card:hover{
   cursor: pointer;
   transform: scale(1.09);
-  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
-  background-color: rgb(65, 102, 102);
+  box-shadow: 0px 0px 20px 20px#FFBC06;
+  /* background-color: rgb(65, 102, 102); */
  
 }
 .nav-item{
@@ -54,12 +54,26 @@
     padding: 18px;
     z-index: 1;
 }
+.card-text{
+  color: white;
+  font-size: 19px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+a{
+  text-decoration: none;
+}
   
   a:hover + .drop{
             display: block;
             color: rgb(221, 221, 221);
             font-size: 17px;
         }
+        .header{
+          position: fixed;
+          width: 100%;
+          z-index: 20;
+        }
+       
   
     </style>
     <title>Play Online Games</title>
@@ -69,136 +83,130 @@
   </head>
   <body>
     <!-- THIS IS FOR NAVIGATION BAR -->
-  <header>
-    <nav class="navbar navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img src="images/logo with words.webp" alt="" width="180" height="100">
-        </a>
-
-        <nav class="navbar navbar-expand-lg navbar-warning bg-warning" style="border-radius: 8mm;">
-          <div class="container-fluid">
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-link" aria-current="page" href="index.html" style="padding: 8px 34px; ">HOME</a>
-                <a class="nav-link" href="about us.html" style="padding: 8px 34px;">ABOUT US</a>
-                <a class="nav-link" href="index.html" style="padding: 8px 34px;">CONTACT US</a><div class="drop">MAIL: smile-again@gmail.com <br><br>PH. NO.: +91-6201848517</div>
-                <a class="nav-link" href="faq.html" style="padding: 8px 34px;">FAQ</a>
+    <div class="header">
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+  
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo with words.webp" alt="" width="180" height="100">
+          </a>
+          <nav class="navbar navbar-expand-lg navbar-warning bg-warning" style="border-radius: 8mm;">
+            <div class="container-fluid">
+  
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link " aria-current="page" href="index.html" style="padding: 8px 34px; color: black;">HOME</a>
+                  <a class="nav-link" href="about us.html" style="padding: 8px 34px;color: black;">ABOUT US</a>
+                  <a class="nav-link" href="#contact" style="padding: 8px 34px;color: black;">CONTACT US</a>
+                  <div class="drop" style="color: black;">MAIL: smile-again@gmail.com <br><br>PH. NO.: +91-6201848517</div>
+                  <a class="nav-link" href="faq.html" style="padding: 8px 34px; color: black;">FAQ</a>
+                </div>
               </div>
             </div>
-          </div>
-        </nav>
-      </div>
-    </nav>
-  </header>
+          </nav>
+  
+        </div>
+      </nav>
+    </div>
 
   <!-- NAVBAR ENDS HERE -->
-  <b><h1><i>PLAY SOME INTERESTING GAMES HERE</i></h1></b>
+  <b><h1 style="padding-top: 200px;color: #FFBC06;font-size: 70px; letter-spacing: 0.3px;">GAMES & CHILL</h1></b>
   <!-- cards start here -->
-      <div class="row m-5 justify-content-center">
+      <div class="row m-5 justify-content-center" style="padding: 0px 10px;">
         <!-- 1st game -->
         <div class="card" style="width: 18rem;">
-          <img src="images\games page images\hand spin.webp" class="card-img-top" alt="...">
+          <a href="https://miminogames.com/game/hand-spinner-simulator/"> <img src="images\games page images\hand spin.webp" class="card-img-top" alt="...">
           <div class="card-body">
-            <p class="card-text"><a href="https://miminogames.com/game/hand-spinner-simulator/"> HAND SPIN SIMULATOR</a></p>
-          </div>
+            <p class="card-text" >HAND SPIN SIMULATOR</p></div></a>
+          
         </div>
        <!-- 1st game ends -->
        <!-- 2nd game -->
        <div class="card" style="width: 18rem;">
+        <a href="https://miminogames.com/game/kick-the-teddy-bear/">
         <img src="images\games page images\kick the teddy bear.webp" class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text" ><a href="https://miminogames.com/game/kick-the-teddy-bear/"> KICH THE TEDDY BEAR</a></p>
+          <p class="card-text" > KICH THE TEDDY BEAR</p></div></a>
         </div>
-      </div>
+      
        <!-- 2nd game ends -->
        <!-- 3rd game -->
-       <div class="card" style="width: 18rem;">
+       <div class="card" style="width: 18rem;"><a href="https://www.yiv.com/Fruit-Ninja-Online">
         <img src="images\games page images\fruit ninja.webp" class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text"><a href="https://www.yiv.com/Fruit-Ninja-Online">CUT THE FRUITS</a></p>
-        </div>
+          <p class="card-text">CUT THE FRUITS</p></div></a>
+        
       </div>
        <!-- 3rd game ends -->
        <!-- 4th game -->
-       <div class="card" style="width: 18rem;">
+       <div class="card" style="width: 18rem;"><a href=" https://www.yiv.com/Realistic-Parking-Master">
         <img src="images\games page images\realistic parking.webp" class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text"><a href=" https://www.yiv.com/Realistic-Parking-Master">PARK THE CAR</a></p>
-        </div>
+          <p class="card-text">PARK THE CAR</p></div></a>
       </div>
        <!-- 4th game ends -->
        <!-- 5th game -->
-       <div class="card" style="width: 18rem;">
+       <div class="card" style="width: 18rem;"><a href=" https://miminogames.com/game/champions-slot/">
         <img src="images\games page images\The-Champions-slot-pragmaticplay.webp" class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text"><a href=" https://miminogames.com/game/champions-slot/">WIN THE SLOT</a></p>
-        </div>
+          <p class="card-text">WIN THE SLOT</p></div></a>
       </div>
        <!-- 5th game ends -->
        <!-- 6th game -->
-       <div class="card" style="width: 18rem;">
+       <div class="card" style="width: 18rem;"><a href="https://miminogames.com/game/draw-parking/">
         <img src="images\games page images\draw-parking.webp" class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text"><a href="https://miminogames.com/game/draw-parking/">DRAW AND PARK</a></p>
-        </div>
+          <p class="card-text">DRAW AND PARK</p></div></a>
       </div>
        <!-- 6th game ends -->
        <!-- 7th game -->
-       <div class="card" style="width: 18rem;">
+       <div class="card" style="width: 18rem;"><a href=" https://miminogames.com/game/among-us/">
         <img src="images\games page images\among us.webp" class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text"><a href=" https://miminogames.com/game/among-us/">PLAY AMONG US</a></p>
-        </div>
+          <p class="card-text">PLAY AMONG US</p></div></a>
       </div>
        <!-- 7th game ends -->
        <!-- 8th game -->
-       <div class="card" style="width: 18rem;">
+       <div class="card" style="width: 18rem;"><a href="https://miminogames.com/game/christmas-memory-matching/">
         <img src="images\games page images\christmasmemory_thumb.webp" class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text"><a href="https://miminogames.com/game/christmas-memory-matching/">TEST YOUR MEMORY</a></p>
-        </div>
+          <p class="card-text">TEST YOUR MEMORY</p></div></a>
       </div>
        <!-- 8th game ends -->
        
        <!-- 9th game --> 
-       <div class="card" style="width: 18rem;">
+       <div class="card" style="width: 18rem;"><a href="https://codenames.game/">
         <img src="images\games page images\codenames.webp" class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text"><a href="https://codenames.game/">PLAY CODENAMES</a></p>
-        </div>
+          <p class="card-text">PLAY CODENAMES</p></div></a>
       </div>
       <!-- 9th game ends -->
        <!-- 10th game -->
-       <div class="card" style="width: 18rem;">
+       <div class="card" style="width: 18rem;"><a href="https://miminogames.com/game/sky burger/">
         <img src="images\games page images\sky burger.webp" class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text"><a href="https://miminogames.com/game/sky burger/">MAKE THE BURGER</a></p>
-        </div>
+          <p class="card-text">MAKE THE BURGER</p></div></a>
       </div>
        <!-- 10th game ends -->
        <!-- 11th game --> 
-       <div class="card" style="width: 18rem;">
+       <div class="card" style="width: 18rem;"><a href=" https://miminogames.com/game/pull-the-rocket/">
         <img src="images\games page images\Pull-The-Rocket.webp" class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text"><a href=" https://miminogames.com/game/pull-the-rocket/">PULL THE ROCKET</a></p>
-        </div>
+          <p class="card-text">PULL THE ROCKET</p></div></a>
       </div>
        <!-- 11th game ends -->
        <!-- 12th game -->
-       <div class="card" style="width: 18rem;">
+       <div class="card" style="width: 18rem;"><a href=" https://miminogames.com/game/mosquito-smash-game/">
         <img src="images\games page images\mosquito smash.webp" class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text"><a href=" https://miminogames.com/game/mosquito-smash-game/">SMASH THE MOSQUITOES</a></p>
-        </div>
+          <p class="card-text">SMASH THE MOSQUITOES</p></div></a>
       </div>
        <!-- 12th game ends -->
-        </div>
+        
       
   <!-- cards end here -->
   <!-- CHAT BOT -->

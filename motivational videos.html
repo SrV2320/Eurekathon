@@ -55,6 +55,13 @@
             color: rgb(221, 221, 221);
             font-size: 17px;
         }
+        .header{
+          position: fixed;
+          width: 100%;
+        z-index: 20;
+        
+        }
+       
    
     </style>
     <style>
@@ -64,13 +71,13 @@
 
 <body style="background-image: linear-gradient(yellow,#1B2044 60%,yellow);">
     <!-- THIS IS FOR NAVIGATION BAR -->
-    <header>
+    <div class="header">
       <nav class="navbar navbar-dark bg-dark">
         <div class="container">
+  
           <a class="navbar-brand" href="index.html">
             <img src="images/logo with words.webp" alt="" width="180" height="100">
           </a>
-  
           <nav class="navbar navbar-expand-lg navbar-warning bg-warning" style="border-radius: 8mm;">
             <div class="container-fluid">
   
@@ -80,40 +87,81 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                  <a class="nav-link" aria-current="page" href="index.html" style="padding: 8px 34px;">HOME</a>
-                  <a class="nav-link" href="about us.html" style="padding: 8px 34px;">ABOUT US</a>
-                  <a class="nav-link" href="index.html" style="padding: 8px 34px;">CONTACT US</a><div class="drop">MAIL: smile-again@gmail.com <br><br>PH. NO.: +91-6201848517</div>
-                  <a class="nav-link" href="faq.html" style="padding: 8px 34px;">FAQ</a>
+                  <a class="nav-link " aria-current="page" href="index.html" style="padding: 8px 34px; color: black;">HOME</a>
+                  <a class="nav-link" href="about us.html" style="padding: 8px 34px;color: black;">ABOUT US</a>
+                  <a class="nav-link" href="#contact" style="padding: 8px 34px;color: black;">CONTACT US</a>
+                  <div class="drop" style="color: black;">MAIL: smile-again@gmail.com <br><br>PH. NO.: +91-6201848517</div>
+                  <a class="nav-link" href="faq.html" style="padding: 8px 34px; color: black;">FAQ</a>
                 </div>
               </div>
             </div>
           </nav>
+  
         </div>
       </nav>
-    </header>
+    </div>
   <!-- this ends nav bar -->
     <!-- this starts for carousel -->
-    <div class="container" >
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="margin-bottom: 50px;">
+    <div class="container">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner" style="padding-top: 150px;">
+        <div class="carousel-item active" data-bs-interval="3000">
+          <a href="https://youtu.be/eAK14VoY7C0" target="blank"> <img
+            src="images/5.webp"
+            class="d-block w-100" alt="..."></a>
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <a href="https://youtu.be/lJCUC0mRkPo" target="blank"><img
+            src="images/6.webp"
+            class="d-block w-100" alt="..."></a>
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <a href="https://youtu.be/vVrfm6wO39s" ><img
+            src="images/7.webp" class="d-block w-100"
+            alt="..."></a>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" style="padding-top: 150px;">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" style="padding-top: 150px;">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <h3 style="text-align: center; color: black;  font-size: 40px;">CLICK TO PLAY THE VIDEOS</h3>
+    </div>
+    <!-- <div class="container" >
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="margin-bottom: 50px; padding-top:150px ;">
             <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="4000">
+                <div class="carousel-item active" data-bs-interval="2000">
                     <a href="https://youtu.be/eAK14VoY7C0" target="blank"> <img
                             src="images/5.webp"
                             class="d-block w-100" alt="..."></a>
                 </div>
-                <div class="carousel-item" data-bs-interval="4000">
+                <div class="carousel-item" data-bs-interval="2000">
                     <a href="https://youtu.be/lJCUC0mRkPo" target="blank"><img
                             src="images/6.webp"
                             class="d-block w-100" alt="..."></a>
                 </div>
-                <div class="carousel-item" data-bs-interval="4000">
+                <div class="carousel-item" data-bs-interval="2000">
                     <a href="https://youtu.be/vVrfm6wO39s" ><img
                             src="images/7.webp" class="d-block w-100"
                             alt="..."></a>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="prev">
+            
+        </div>
+    </div> -->
+    <!-- <div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev" >
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
@@ -122,10 +170,9 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
-        </div>
-    </div>
+            </div> -->
     <!-- this ends carousel -->
-    <h3 style="text-align: center; margin-top: -47px; color: black; font-size: 40px;">CLICK TO PLAY THE VIDEOS</h3>
+   
     <!-- this starts youtube static videos -->
     <!-- ENGLISH VDOS -->
     <section class="static">

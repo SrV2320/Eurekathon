@@ -33,3 +33,11 @@
 body{
 	font-family: 'Open Sans', sans-serif;   
   }
+  .header{
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+  }
+  #heading{
+	  padding-top: 130px;
+  }

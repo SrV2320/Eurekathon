@@ -167,5 +167,11 @@ body{
 li{
     text-align: left;
     padding: 10px ;
-    color: #523d05e8;
+    color: #ca530fbe;
+    font-family: sans-serif;
+}
+.header{
+  position: fixed;
+  width: 100%;
+  z-index: 20;
 }

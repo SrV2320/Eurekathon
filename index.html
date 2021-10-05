@@ -10,11 +10,12 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="stylesmileagain.css">
   <link rel="stylesheet" href="static/css/chat.css">
   <link rel="stylesheet" href="static/css/home.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 
   <title>SMILE AGAIN</title>
 
@@ -31,13 +32,13 @@
     crossorigin="anonymous"></script>
 
   <!-- THIS IS FOR NAVIGATION BAR -->
-  <header>
+  <div class="header">
     <nav class="navbar navbar-dark bg-dark">
       <div class="container">
+
         <a class="navbar-brand" href="index.html">
           <img src="images/logo with words.webp" alt="" width="180" height="100">
         </a>
-
         <nav class="navbar navbar-expand-lg navbar-warning bg-warning" style="border-radius: 8mm;">
           <div class="container-fluid">
 
@@ -47,179 +48,230 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="index.html" style="padding: 8px 34px; ">HOME</a>
-                <a class="nav-link" href="about us.html" style="padding: 8px 34px;">ABOUT US</a>
-                <a class="nav-link" href="#contact" style="padding: 8px 34px;">CONTACT US</a>
-                <a class="nav-link" href="faq.html" style="padding: 8px 34px;">FAQ</a>
+                <a class="nav-link active" aria-current="page" href="index.html" style="padding: 8px 34px; color: black;">HOME</a>
+                <a class="nav-link" href="about us.html" style="padding: 8px 34px;color: black;">ABOUT US</a>
+                <a class="nav-link" href="#contact" style="padding: 8px 34px;color: black;">CONTACT US</a>
+                <div class="drop" style="color: black;">MAIL: smile-again@gmail.com <br><br>PH. NO.: +91-6201848517</div>
+                <a class="nav-link" href="faq.html" style="padding: 8px 34px; color: black;">FAQ</a>
               </div>
             </div>
           </div>
         </nav>
+
       </div>
     </nav>
-  </header>
+  </div>
 
   <!-- NAVBAR ENDS HERE -->
   <!-- THIS IS FOR THE CAROUSEL -->
-  <div style="background-image: linear-gradient(#FFBC06,rgb(41, 41, 41));">
-    <div class="container">
-      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="4000">
-            <img src="images/1.webp" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item" data-bs-interval="4000">
-            <img src="images/2.webp" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item" data-bs-interval="4000">
-            <img src="images/3.webp" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item" data-bs-interval="4000">
-            <img src="images/4.webp" class="d-block w-100" alt="...">
-          </div>
+  <div class="bg">
+    <!-- <div class="container"> -->
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner embed-responsive embed-responsive-21by9">
+        <div class="carousel-item active" data-bs-interval="3000">
+          <img src="images/1.webp" class="d-block w-100" alt="...">
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="images/2.webp" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="images/3.webp" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="images/4.webp" class="d-block w-100" alt="...">
+        </div>
       </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
   </div>
+
+
   <!-- CAROUSEL ENDS HERE -->
   <!-- THIS STARTS CARDS -->
 
-  <div class="cards" id="cards" style="background-image: linear-gradient( rgb(41, 41, 41),#FFBC06 ,rgb(41, 41, 41)); margin-top: -24px;">
-    <h1 class="text-center sec-header mt-4 pt-5 pb-2"> <b style="color: black; font-size: 50px;"><b>COME AND RELAX </b></h2>
-      <div class="row m-5 justify-content-center">
 
-        <!-- <div class="container"> -->
-        <!-- GAMES -->
-        <div class="card mb-3 mx-3 " style="max-width: 500px; min-width: 340px; align-self: center;">
-          <div class="row no-gutters" style="align-items: center;">
-            <div class="col-md-4">
-              <img src="images/games pic.webp" class="card-img" alt="...">
-            </div>
-            <div class="col-md-8" style="align-self: center;">
-              <div class="card-body">
-                <h5 class="card-title"><i>GAMES</i></h5>
-                <p class="card-text">Kick your STRESS aside for sometime and come play these interesting online games
-                  like <b><i>KICK THE TEDDY</i></b>,<b><i>DRAW PARKING</i></b> and many more. Relax your mind
-                <p class="card-text"><small class="text-muted"><a href="games.html">Play
-                      games</a></small></p>
+  <div class="cards" id="cards" style=" margin-top: -24px;">
+    <div class="come">
+      <h1 class="text-center sec-header mt-4 pt-5 pb-2"> <b
+          style="color: #FFBC06; font-size: 60px; letter-spacing: 0.3px;">COME AND RELAX </b>
+      </h1>
+    </div>
+    <div class="row m-5 justify-content-center">
+      <!-- yha se 4 cards -->
+      <a href="games.html">
+        <div class="container1">
+          <!-- GAMES starts-->
+          <div class="card mb-3 mx-3 " data-aos="zoom-in-down" style="max-width: 700px; min-width: 340px; align-self: 
+            center; ">
+            <div class="row no-gutters" style="align-items: center;">
+              <div class="col-md-4">
+                <img src="images/games pic.webp" class="card-img" alt="...">
+              </div>
+              <div class="col-md-8" style="align-self: center;">
+                <div class="card-body">
+                  <h5 class="card-title">GAMES</h5>
+                  <p class="card-text">Kick your STRESS aside for sometime and come play these interesting online games
+                    like <b>KICK THE TEDDY</b>, <b>DRAW PARKING</b> and many more. Relax your mind
+                  <!-- <p class="card-text-link"><small class="text-muted">Play
+                      games
+      </a></small></p> -->
+</p></div></div></div></div></div></a>
+
+
+
+      <br>
+
+      <!-- GAMES ends-->
+      <!-- yoga starts-->
+
+      <a href="yoga.html">
+        <div class="container1">
+          <div class="card mb-3 mx-3 " data-aos="zoom-in-down" style="max-width: 700px; min-width: 340px; align-self: 
+          center; ">
+            <div class="row no-gutters" style="align-items: center; ">
+              <div class="col-md-4">
+                <img src="images/yoga pic.webp" class="card-img" alt="...">
+              </div>
+              <div class="col-md-8" style="align-self: center;">
+                <div class="card-body">
+                  <h5 class="card-title">YOGA</h5>
+                  <p class="card-text">The best way to relax stress and anxiety is to Practice <B>YOGA</B> Calm
+                    your mind. Come Practice Yoga according to a scheduled plan by our experts.
+
+                  </p>
+                  <!-- <p class="card-text-link"><small class="text-muted">Practice
+                      Yoga</a></small></p> -->
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- GAMES -->
-        <!-- yoga -->
+      </a><br>
 
-        <div class="card mb-3 mx-3 " style="max-width: 500px; min-width: 340px; align-self: center;">
-          <div class="row no-gutters" style="align-items: center;">
-            <div class="col-md-4">
-              <img src="images/yoga pic.webp" class="card-img" alt="...">
-            </div>
-            <div class="col-md-8" style="align-self: center;">
-              <div class="card-body">
-                <h5 class="card-title"><i>YOGA</i></h5>
-                <p class="card-text">The best way to relax stress and anxiety is to Practice <B><I>YOGA.</I></B> Calm
-                  your mind. Come Practice Yoga according to a scheduled plan by our experts.
+      <!-- yoga ends-->
+      <!-- diets starts-->
 
-                </p>
-                <p class="card-text"><small class="text-muted"><a
-                      href="yoga.html">Practice
-                      Yoga</a></small></p>
+      <a href="https://www.eatthismuch.com/">
+        <div class="container1">
+          <div class="card mb-3 mx-3 " data-aos="zoom-in-down" style="max-width: 700px; min-width: 340px; align-self: 
+          center;">
+            <div class="row no-gutters" style="align-items: center;">
+              <div class="col-md-4">
+                <img src="images/diet pic.webp" class="card-img" alt="...">
+              </div>
+              <div class="col-md-8" style="align-self: center;">
+                <div class="card-body">
+                  <h5 class="card-title">DIET PLANS</h5>
+                  <p class="card-text">The most important thing to take care during bad times is your
+                    <b>DIET</b>
+                    Take a tour around and see what our experts have to say about <b>Diet Plans</b> and get a
+                    proper diet plan.
+
+                  </p>
+                  <!-- <p class="card-text-link"><small class="text-muted">Follow
+                      our diet plan</a></small></p> -->
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- yoga -->
-        <!-- diets -->
-        <div class="card mb-3 mx-3 " style="max-width: 500px; min-width: 340px; align-self: center;">
-          <div class="row no-gutters" style="align-items: center;">
-            <div class="col-md-4">
-              <img src="images/diet pic.webp" class="card-img" alt="...">
-            </div>
-            <div class="col-md-8" style="align-self: center;">
-              <div class="card-body">
-                <h5 class="card-title"><i>DIET PLANS</i></h5>
-                <p class="card-text">The most important thing to take care during bad times is your <b><i>DIET.</i></b>
-                  Take a tour around and see what our experts have to say about <b><i>Diet Plans</i></b> and get a
-                  proper diet plan.
+      </a><br>
 
-                </p>
-                <p class="card-text"><small class="text-muted"><a href="https://www.eatthismuch.com/">Follow
-                      our diet plan</a></small></p>
+      <!-- diets ends-->
+      <!-- youtube videos starts-->
+
+      <a href="motivational videos.html">
+        <div class="container1">
+          <div class="card mb-3 mx-3 " data-aos="zoom-in-down" style="max-width: 700px; min-width: 340px; align-self: 
+          center;">
+            <div class="row no-gutters" style="align-items: center;">
+              <div class="col-md-4">
+                <img src="images/vdos pic.webp" class="card-img" alt="...">
+              </div>
+              <div class="col-md-8" style="align-self: center;">
+                <div class="card-body">
+                  <h5 class="card-title">MOTIVATIONAL VIDEOS</h5>
+                  <p class="card-text">Don't Stress out yourself. Instead <b>MOTIVATE YOURSELF</b> We present
+                    you
+                    a list of selected motivational videos by experts.
+                  </p>
+                  <!-- <p class="card-text-link"><small class="text-muted">Motivate
+                      Yourself</a></small></p> -->
+
+                </div>
               </div>
             </div>
           </div>
+
         </div>
-        <!-- diets -->
-        <!-- youtube videos -->
-        <div class="card mb-3 mx-3 " style="max-width: 500px; min-width: 340px; align-self: center;">
-          <div class="row no-gutters" style="align-items: center;">
-            <div class="col-md-4">
-              <img src="images/vdos pic.webp" class="card-img" alt="...">
-            </div>
-            <div class="col-md-8" style="align-self: center;">
-              <div class="card-body">
-                <h5 class="card-title"><i>MOTIVATIONAL VIDEOS</i></h5>
-                <p class="card-text">Don't Stress out yourself. Instead <b><i>MOTIVATE YOURSELF.</i></b> We present you
-                  a list of selected motivational videos by experts.
-                </p>
-                <p class="card-text"><small class="text-muted"><a href="motivational videos.html">Motivate
-                      Yourself</a></small></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      </a>
+    </div>
   </div>
-  <!-- yt vdos -->
+
+
+  <!-- yt vdos ends -->
   <!-- THIS ENDS CARDS -->
+  <!-- hope we brought starts -->
+  <div class="footer" style="margin-top: -50px;">
+    <h1 style="padding-bottom: 20px; padding-top: 40px; color: #FFBC06;">HOPE WE BROUGHT A <b>SMILE </b> ON YOUR FACE :)</h1>
+    <h3 style="text-align: center; padding-bottom: 15px; margin-top: -20px; font-family: Arial, Helvetica, sans-serif; font-weight: 500; color: #FFBC06;">
+      If so then don't forget to write to us @</h3>
+    <p style="text-align: center; font-size: 20px; font-family: Arial, Helvetica, sans-serif;"><img
+        src="images/mail icon.webp" alt="" height="20" width="30"> <a
+        href="mailto:smile-again@gmail.com" style="color: #FFBC06; text-decoration: underline;">smile-again@gmail.com</a></p><br>
 
-  <!-- this starts footer -->
-  <footer>
-    <div class="contact" style="background-image: linear-gradient(rgb(41, 41, 41),#FFBC06); margin-top: -50px; padding-top: 50px;">
-      <div class="container-sm">
-        <div class="row">
-          <!-- work together desc -->
-          
-            <div class="col-md-12 mx-auto my-5 white-text text-center">
-              <h1><b><i>HOPE WE BROUGHT A SMILE ON YOUR FACE :)</i></b></h1>
-              <h3 class="pt-2">
-                If so then don't forget to write to us @ <br>
-                <a name="contact"> <p><img src="images/mail icon.webp" width="30" height="20"><a href="mailto:souravchandra2320@gmail.com"
-                    style="font-size: 20px; color: darkblue;"> smile-again@gmail.com</a></p>
-              </h3>
+    <!-- <hr style="width: 70%; margin-left: 15%;"> -->
+    <!-- hope we broght ends -->
+    <!-- this starts footer -->
+   
+      <div class="container">
+        <div class="row" >
+          <!-- <div class="col lg-6">
+            This Quarantine don't forget to SMILE and put a smile on the faces of everyone around you.<br>
+            <img src="https://media.giphy.com/media/DIgT73ICZOOZqNCNs7/giphy.gif" width="200" height="200">
 
-              <br>
-              <p>
-              <H3>
-                <hr>This Quarantine don't forget to <b><i>SMILE</i></b> and put a smile on the faces of everyone around
-                you.
-              </H3><br>
-              <p style="font-size: 20px;">FOR ANY QUERIES CONTACT US ON <br><img src="images/call logo.webp" alt=""
-                  height="20" width="20"> +91-6201848517 <br><img src="images/call logo.webp" alt="" height="20" width="20">
-               +91-9051263207</p>
-              </p>
-             <H6 style="color: black;">&COPY; SMILE AGAIN</H5>
+          </div> -->
+        <a name="contact">  <div class="col lg-6" >
+            <div class="forany" > FOR ANY QUERIES CONTACT US ON</div><br>
+           <div class="numbers"> <i class="fas fa-mobile-alt"></i>+91-6201848517<br>
+            <i class="fas fa-mobile-alt"></i>+91-9051263207<br></div>
+            <br>
+            <h5 style="font-size: 20px;color: #262524;">Connect with us</h5>
+            <div id="social">
+              <a class="footer-link" href="smile-again@gmail.com"><i
+                  class="social-icon fas fa-envelope fa-3x icons"></i></i></a>
 
-
-
-             
+              <a class="footer-link" href="https://www.linkedin.com/"><i class="fab fa-linkedin fa-3x icons"></i></a>
+              <a class="footer-link" href="https://twitter.com/"><i class="fab fa-twitter fa-3x icons"></i></a>
+              <a class="footer-link" href="https://instagram.com/"><i class="fab fa-instagram fa-3x icons"></i></a><br>
             </div>
+            <H6 style="color: #262524;">&COPY; SMILE AGAIN</H6>
+
+          </div>
         </div>
-        
       </div>
     </div>
-    
-  </footer>
+  </div>
+
+  <!-- this ends footer -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 150,
+      duration: 1000,
+
+    });
+  </script>
+
 
   <!-- CHAT BOT -->
   <script>!function (e, t, a) { var c = e.head || e.getElementsByTagName("head")[0], n = e.createElement("script"); n.async = !0, n.defer = !0, n.type = "text/javascript", n.src = t + "/static/js/chat_widget.js?config=" + JSON.stringify(a), c.appendChild(n) }(document, "https://app.engati.com", { bot_key: "6d8a45afe6c345d7", welcome_msg: true, branding_key: "default", server: "https://app.engati.com", e: "p" });</script>
