@@ -18,6 +18,10 @@ a{
   
   letter-spacing: 0.2mm;
 }
+.card-title{
+  font-size: 35px;
+  font-weight: bolder;
+}
   
 .container1{
   display: flex;
@@ -147,13 +151,25 @@ font-size: 16px;
 
 }
 .forany{
-  font-size:20px; 
+  font-size:25px; 
   padding-top:70px;
-  padding-left: 20px;
+  
   color: #262524;
 }
-@media only screen and (max-width: 617px){
-  .forany{
-    padding-top: 150px;
+@media only screen and (max-width: 975px){
+  #contain{
+    padding-left: 0px;
   }
 }
+@media only screen and (max-width: 645px){
+  #contain{
+    padding-right: 50px;
+  }
+}
+@media only screen and (max-width: 350px){
+  .forany{
+    font-size: 20px;
+  }
+  }
+
+
